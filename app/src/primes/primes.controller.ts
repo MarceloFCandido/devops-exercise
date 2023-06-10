@@ -4,11 +4,11 @@ import { PrimesService } from './primes.service';
 
 import { PrimeCheck, PrimeOrder } from '../common/interfaces';
 
-@Controller('primes')
+@Controller('prime')
 export class PrimesController {
   constructor(private readonly primesService: PrimesService) {}
 
-  @Post('/prime')
+  @Post('/')
   checkIfPrime(@Body() primeOrder: PrimeOrder): PrimeCheck {
     return this.primesService.checkIfPrime(primeOrder);
   }
