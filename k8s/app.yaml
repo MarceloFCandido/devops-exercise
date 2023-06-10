@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: primes-ctn
-        image: primes:latest
+        image: primes:v1.0.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
