@@ -1,11 +1,11 @@
 interface PrimeOrderInterface {
-  number: number
+  number: number;
 }
 
 export default class PrimeOrder implements PrimeOrderInterface {
-  number: number
+  number: number;
 
   constructor(number: number) {
-    this.number = number
+    this.number = number;
   }
 }
