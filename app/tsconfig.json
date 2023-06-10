@@ -19,7 +19,9 @@
     "target": "es2017",
     "types": [
       "express",
+      "jest",
       "node",
+      "supertest"
     ]
   }
 }
