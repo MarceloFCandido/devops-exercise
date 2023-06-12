@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: primes-ctn
-        image: primes:v1.0.0
+        image: marcelofcandido/primes:v1.0.5
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
@@ -41,7 +41,7 @@ metadata:
   name: primes-svc
   namespace: primes-ns
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: primes
   ports:
